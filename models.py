@@ -2,6 +2,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import torchvision.models as models
+
 
 class DoubleConv(nn.Module):
     """(Conv2D -> BN -> ReLU) * 2"""
@@ -85,9 +87,7 @@ class UNet(nn.Module):
         return F.sigmoid(logits)*300
     
 
-import torch
-import torch.nn as nn
-import torchvision.models as models
+
 
 class ResNetFCN(nn.Module):
     def __init__(self, input_size=224, output_scale=300.0):
@@ -182,10 +182,6 @@ class SegNet(nn.Module):
 
 
 
-
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 
 class DoubleConv(nn.Module):
     """(Conv2D -> BN -> ReLU) * 2"""
