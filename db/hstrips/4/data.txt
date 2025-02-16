@@ -1,0 +1,2 @@
+﻿	Time [s]	Minimum [MPa]	Maximum [MPa]	Average [MPa]	
+1	1.	59.56	174.3	124.22	
